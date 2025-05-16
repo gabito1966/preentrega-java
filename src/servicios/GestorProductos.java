@@ -66,7 +66,7 @@ public class GestorProductos {
 
         if (producto != null) {
             productos.remove(producto);
-            System.out.println("Producto eliminado.");
+          //  System.out.println("Producto eliminado .");
         } else {
             System.out.println("Producto no encontrado.");
         }

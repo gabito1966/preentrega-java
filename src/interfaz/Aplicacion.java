@@ -39,7 +39,7 @@ public class Aplicacion {
                     String nombre = teclado.nextLine();
                     System.out.print("Precio: ");
                     double precio = teclado.nextDouble();
-                    System.out.println("Stock");
+                    System.out.println("Stock: ");
                     int stock = teclado.nextInt();
                     gestorProductos.agregarProducto(new Producto(nombre, precio, stock));
                     System.out.println("Nuevo producto agregado.");
@@ -136,7 +136,7 @@ public class Aplicacion {
                         } catch (ProductoNoEncontradoException e) {
                             System.out.println(e.getMessage());
                         }
-                        System.out.print("¿Agregar otro producto? (s/n): ");
+                        System.out.print("Agregar otro producto? (s/n): ");
                         String continuar = teclado.next();
                         agregando = continuar.equalsIgnoreCase("s");
                     }
@@ -156,7 +156,7 @@ public class Aplicacion {
                     }
                 }
                 case 10 -> {
-                    System.out.println("Productos más vendidos:");
+                    System.out.println("Productos mas vendidos:");
                     gestorPedidos.productosMasVendidos().forEach(System.out::println);
                 }
 
