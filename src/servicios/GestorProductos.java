@@ -38,6 +38,35 @@ public class GestorProductos {
         productos.add(new Producto("Mouse pad gamer", 120.00, 40));
         productos.add(new Producto("Hub USB 4 puertos", 100.00, 25));
         productos.add(new Producto("Limpieza para PC (kit)", 180.00, 12));
+        productos.add(new Producto("Monitor LED 27\"", 1600.00, 10));
+        productos.add(new Producto("Teclado inalámbrico", 400.00, 18));
+        productos.add(new Producto("Mouse gamer con DPI ajustable", 380.00, 20));
+        productos.add(new Producto("Memoria RAM 16GB DDR4", 650.00, 15));
+        productos.add(new Producto("Disco SSD 1TB", 1200.00, 10));
+        productos.add(new Producto("Placa madre microATX", 850.00, 14));
+        productos.add(new Producto("Procesador AMD Ryzen 5", 1250.00, 12));
+        productos.add(new Producto("Fuente de poder 750W", 750.00, 8));
+        productos.add(new Producto("Gabinete ATX con ventiladores", 950.00, 7));
+        productos.add(new Producto("Cooler líquido AIO", 1100.00, 5));
+        productos.add(new Producto("Disco duro externo 2TB", 1000.00, 9));
+        productos.add(new Producto("Webcam 4K", 450.00, 12));
+        productos.add(new Producto("Parlantes Bluetooth", 300.00, 20));
+        productos.add(new Producto("Impresora laser", 1500.00, 6));
+        productos.add(new Producto("Switch de red 8 puertos", 400.00, 10));
+        productos.add(new Producto("Adaptador Bluetooth USB", 120.00, 25));
+        productos.add(new Producto("Cable DisplayPort 1.5m", 70.00, 30));
+        productos.add(new Producto("Soporte para monitor", 220.00, 15));
+        productos.add(new Producto("Enfriador para laptop", 200.00, 18));
+        productos.add(new Producto("Tira LED RGB para gabinete", 90.00, 25));
+        productos.add(new Producto("Micrófono condensador", 700.00, 10));
+        productos.add(new Producto("Auriculares gamer", 650.00, 17));
+        productos.add(new Producto("Batería UPS 1000VA", 1700.00, 4));
+        productos.add(new Producto("Tablet digitalizadora", 800.00, 6));
+        productos.add(new Producto("Tarjeta gráfica NVIDIA GTX 1660", 2500.00, 5));
+        productos.add(new Producto("Tarjeta de sonido externa", 300.00, 8));
+        productos.add(new Producto("Controlador para juegos", 450.00, 13));
+        productos.add(new Producto("Silla gamer ergonómica", 2200.00, 3));
+        productos.add(new Producto("Licencia Windows 10 Pro", 600.00, 30));
     }
 
     // Métodos para Agregar,Listar, Buscar por ID, Eliminar y Modificar productos.
@@ -51,7 +80,7 @@ public class GestorProductos {
 
     public Producto buscarPorId(int id) throws ProductoNoEncontradoException {
         // Implementación de búsqueda por ID
-       
+
         return productos.stream()
                 .filter(p -> p.getId() == id)
                 .findFirst()
@@ -66,7 +95,7 @@ public class GestorProductos {
 
         if (producto != null) {
             productos.remove(producto);
-          //  System.out.println("Producto eliminado .");
+            //  System.out.println("Producto eliminado .");
         } else {
             System.out.println("Producto no encontrado.");
         }
